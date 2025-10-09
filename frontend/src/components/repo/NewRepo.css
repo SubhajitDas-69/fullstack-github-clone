@@ -128,7 +128,7 @@ textarea {
 }
 
 .css-1tktgsa-MuiPaper-root-MuiPopover-paper-MuiMenu-paper, .css-d1xm6m {
-    background: black !important;
+    background-color: black !important;
     border: 2px solid #626e7a !important;
     border-radius: 12px !important;
     margin-top: 0.5rem !important;
