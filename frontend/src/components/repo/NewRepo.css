@@ -127,7 +127,7 @@ textarea {
     padding: 1rem 0;
 }
 
-.css-1tktgsa-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+.css-1tktgsa-MuiPaper-root-MuiPopover-paper-MuiMenu-paper, .css-d1xm6m {
     background: black !important;
     border: 2px solid #626e7a !important;
     border-radius: 12px !important;
