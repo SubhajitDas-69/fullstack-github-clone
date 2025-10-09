@@ -57,23 +57,23 @@ yargs(hideBin(process.argv))
       await commitRepo(argv.message);
     }
   )
-  .command("pull <repoId>", 
+  .command("pull <repoId>",
     "Pull commits from S3",
-    (yargs) =>{
+    (yargs) => {
       yargs.positional("repoId", {
         describe: "The repository ID in MongoDB",
         type: "string",
       });
     },
     async (argv) => {
-    await connectDB();
-    try{
-      await pullRepo(argv.repoId);
-      console.log("Pull successful!");
-    }catch(err){
-      console.error("Pull failed :", err.message);
-    }
-  })
+      await connectDB();
+      try {
+        await pullRepo(argv.repoId);
+        console.log("Pull successful!");
+      } catch (err) {
+        console.error("Pull failed :", err.message);
+      }
+    })
   .command(
     "push <url>",
     "Push commits to S3",
@@ -87,7 +87,7 @@ yargs(hideBin(process.argv))
       try {
         await connectDB();
         let res = await pushRepo(argv.url);
-        console.log("Push successful!");        
+        console.log("Push successful!");
       } catch (err) {
         console.error("Push failed:", err.message);
       }
@@ -115,16 +115,21 @@ function startServer() {
   const port = process.env.PORT;
 
   app.use(express.json());
-  app.use(cors({ origin: "*" }));
+
+  const allowedOrigins = [
+    "https://fullstack-github-clone.vercel.app",
+    "http://localhost:5173",
+  ];
+  app.use(cors({ origin: allowedOrigins }));
 
   mongoose
     .connect(atlasURL)
     .then(() => console.log("MongoDB connected!"))
     .catch((err) => console.error("Unable to connect:", err));
 
-  app.use("/",mainRouter);
+  app.use("/", mainRouter);
 
-  app.listen(port, () =>{
+  app.listen(port, () => {
     console.log(`Server is listining on port ${port}`);
-});
+  });
 }
