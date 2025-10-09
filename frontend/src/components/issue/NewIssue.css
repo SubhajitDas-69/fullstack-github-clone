@@ -1,0 +1,120 @@
+.new-issue-container {
+  display: flex;
+  background: #0d1117;
+  color: #c9d1d9;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  width: 81%;
+  margin: auto;
+}
+
+.issue-form {
+      flex: 3;
+    margin-right: 30px;
+    display: flex
+;
+    flex-direction: column;
+}
+
+.issue-form label {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.issue-form input {
+  padding: 8px;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  background: #161b22;
+  color: #c9d1d9;
+}
+
+.IssueEditor {
+  margin-top: 10px;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    background: #161b22;
+    display: flex
+;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #30363d;
+}
+
+.tabs button {
+  background: transparent;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  color: #8b949e;
+}
+
+.tabs button.active {
+  color: #c9d1d9;
+  border-bottom: 2px solid #58a6ff;
+}
+
+textarea {
+  min-height: 15rem;
+    padding: 0px;
+    border: none;
+    background: #161b22;
+    color: #c9d1d9;
+    resize: vertical;
+    width: 97%;
+    padding: 1rem;
+}
+
+.preview-box {
+  min-height: 150px;
+  padding: 10px;
+  color: #c9d1d9;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  align-self: flex-start;
+  background: #238636;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sidebar {
+  /* flex: 1; */
+  border-left: 1px solid #30363d;
+  padding-left: 20px;
+}
+
+.sidebar-section {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.sidebar-section span {
+  display: block;
+  margin-top: 5px;
+  color: #8b949e;
+}
+
+.NewIssueHeader{
+        width: 86%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex
+;
+    align-items: center;
+    gap: 0.5rem;
+}
+.preview-box p{
+  color: white;
+  font-size: 0.9rem;
+  font-family: monospace,'Courier New', Courier, sans-serif;
+}

@@ -1,0 +1,14 @@
+#noStarRepoIcon{
+        fill: rgb(168, 169, 171);
+    font-size: 2rem;
+}
+.noStarRepo{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+@media (max-width: 890px) {
+    .starsMainResponsive{
+        flex-direction: column;
+    }
+}

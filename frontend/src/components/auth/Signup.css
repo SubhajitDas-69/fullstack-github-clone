@@ -1,0 +1,23 @@
+.SignupPage .SignupInput {
+    border: none !important;
+}
+
+.text-field {
+    border: none !important;
+}
+
+.signupHeader {
+    text-align: left !important;
+    margin-left: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+#bioTextarea {
+    background: #0b0d10 !important;
+}
+
+#organizationName {
+    padding: 0.5rem !important;
+    border: none !important;
+    margin-bottom: 1rem !important;
+}

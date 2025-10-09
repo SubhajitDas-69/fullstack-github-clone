@@ -1,0 +1,406 @@
+.view-issue-container {
+     background: #0d1117;
+    color: #c9d1d9;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 75%;
+    margin: auto;
+}
+
+.issue-number {
+  color: #8b949e;
+  font-weight: normal;
+}
+
+.issue-status {
+      margin: 10px 0 20px;
+    border-bottom: 2px solid #465362;
+    padding-bottom: 1rem;
+}
+
+.status-badge {
+  display: inline-block;
+    padding: 0.4rem 1.5rem;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    display: flex
+;
+    gap: 0.4rem;
+    width: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-badge.open {
+  background: #238636;
+  color: #fff;
+}
+
+.status-badge.closed {
+  background: #f85149;
+  color: #fff;
+}
+
+.comment-box {
+        border: 1px solid #30363d;
+    border-radius: 6px;
+        margin-bottom: 2rem;
+    background: #161b22;
+    max-height: 20rem;
+    overflow: scroll;
+    scrollbar-width: none;
+    border: 2px solid #114e9b;
+    width: 100%;
+}
+
+.comment-header {
+         padding: 8px 12px;
+    border-bottom: 1px solid #30363d;
+    font-size: 14px;
+    background: #161b22;
+    display: flex
+;
+    gap: 0.2rem;
+    color: #aab4c0;
+    background: #12263f;
+    border-bottom: 2px solid #1a4b84;
+    align-items: center;
+}
+.comment-header a{
+  text-decoration: none;
+}
+
+.comment-content {
+  padding: 12px;
+}
+
+.add-comment label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.IssueComment {
+     border: 1px solid #30363d;
+    border-radius: 6px;
+    margin: 10px 0;
+    background: #161b22;
+        margin-left: 3.5rem;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #30363d;
+}
+
+.tabs button {
+  background: transparent;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  color: #8b949e;
+}
+
+.tabs button.active {
+  color: #c9d1d9;
+  border-bottom: 2px solid #58a6ff;
+}
+
+textarea {
+      width: 98%;
+    min-height: 100px;
+    border: none;
+    padding: 10px;
+    resize: vertical;
+    background: #161b22;
+    color: #c9d1d9;
+}
+
+.preview-box {
+  min-height: 100px;
+  padding: 10px;
+  color: #c9d1d9;
+}
+
+.comment-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.close-btn {
+  background: #8957e5;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.close-btn .octicon{
+  margin-right: 0.5rem !important;
+  fill: #03f832;
+}
+.reOpen-btn{
+  background-color: #484e56;
+}
+
+.comment-btn {
+  background: #238636;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.delete-btn{
+      margin-right: 10px;
+    width: 6rem;
+    border-radius: 7px;
+    background-color: #590303;
+    border: none;
+    cursor: pointer;
+}
+.delete-btn:hover{
+  background-color: #910404;
+}
+.activity{
+  display: flex;
+      gap: 0.3rem;
+    align-items: center;
+
+}
+.activity span, p, small {
+  color: #9c9898;
+}
+.usernameOfIssue{
+  color: white;
+  font-weight: 600;
+  
+}
+.usernameOfIssue a{
+  text-decoration: none;
+}
+#IssueProfile{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.timeline{
+    width: 87%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.issue-title-edit{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.view-issue-container h2{
+  margin-bottom: 0;
+}
+.issue-edit-btn{
+      padding: 0.4rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background: green;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.issueCommentsDiv{
+  background-color: #03f832;
+}
+
+.activity .otherActivity{
+      display: flex
+;
+    align-items: center;
+    gap: 0.3rem;
+        margin-bottom: 1rem;
+    margin-left: 0.5rem;
+        margin-bottom: 3rem;
+}
+.activity .issueComment{
+      display: flex
+;
+    gap: 1rem;
+    width: 100%;
+        margin-bottom: 1rem;
+}
+.commentMain{
+         /* background: blue; */
+    width: 100%;
+    border-radius: 9px;
+    border: 2px solid #265693;
+        margin-bottom: 1rem;
+}
+.commentDiv1{
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid #285c9c;
+    background: #0c1f35;
+    border-radius: 10px 10px 0 0;
+        display: flex
+;
+    gap: 0.5rem;
+    align-items: center;
+}
+.commentDiv1 a{
+      text-decoration: none;
+}
+.commentsOfIssues{
+      padding: 0 1rem;
+}
+.commentsOfIssues p{
+  color: #dbe6f2;
+}
+.comment-body{
+      display: flex
+;
+    gap: 1rem;
+        margin-top: 3rem;
+}
+.commentSection{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.issueIdLink{
+  color: #0076ff;
+}
+.issueIdLink b{
+  color: #0076ff;
+  font-size: 0.9rem;
+}
+.issue-title-edit input{
+  margin-bottom: 0 !important;
+    padding: 0.5rem;
+    border: 2px solid #45515f;
+}
+.Canceledit-btn{
+      margin: 0 1rem 0 1rem;
+    background-color: #484f58;
+    border: 2px solid gray;
+}
+.comment-content p{
+  color: white;
+  font-size: 0.9rem;
+  font-family: monospace,'Courier New', Courier, sans-serif;
+}
+.commentsOfIssues p{
+  line-height: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.userAvatarComment{
+  display: none;
+
+}
+#userAvaterResponsive{
+      height: 1.5rem;
+    width: 1.5rem;
+    font-size: 0.9rem;
+}
+ .activityInfoResponsive{
+              display: flex
+;
+        gap: 0.5rem;
+  }
+.add-comment {
+      margin-bottom: 4rem;
+}
+@media (max-width: 1000px) {
+  .view-issue-container {
+    width: 96%;
+  }
+  .activity p{
+    font-size: 0.9rem;
+  }
+  .userAvatar{
+    display: none;
+  }
+  .userAvatarComment{
+    display: block;
+  }
+  /* .commentSection {
+        margin-left: 3.6rem;
+  } */
+  .timeline {
+    width: 100%;
+  }
+  .IssueComment {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .view-issue-container {
+    padding: 0;
+  }
+  .comment-textarea{
+        width: 96% !important;
+  }
+  .issue-title-edit {
+    flex-direction: column-reverse;
+            /* justify-content: flex-start; */
+        align-items: baseline;
+                margin-top: 1rem;
+  }
+  .view-issue-container h2 {
+        font-size: 1.2rem;
+                margin-top: 1rem;
+  }
+ 
+  .activity .otherActivity{
+        flex-direction: column;
+    align-items: baseline;
+  }
+      .comment-textarea {
+        width: 95% !important;
+    }
+    .tabs {
+    width: 94%;
+}
+.status {
+    font-size: 0.6rem !important;
+}
+}
+@media (max-width: 400px) {
+ .comment-textarea {
+        width: 90% !important;
+    }
+    .issue-edit-btn {
+          padding: 0.1rem 0.5rem;
+          font-size: 0.9rem;
+    }
+    .Canceledit-btn {
+                margin: 1rem 0 1rem 0;
+    }
+    .issue-title-edit input {
+          width: 89% !important;
+    }
+    .status-badge {
+          padding: 0.2rem 1rem;
+              font-size: 0.9rem !important;
+    }
+}
+@media (max-width: 350px) {
+  .comment-actions {
+        flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  .delete-btn {
+    height: 2rem;
+  }
+}
+@media (max-width: 335px) {
+      .issue-title-edit {
+                margin-top: 6rem;
+      }
+      .issue-container {
+            margin-top: 4rem;
+      }
+}

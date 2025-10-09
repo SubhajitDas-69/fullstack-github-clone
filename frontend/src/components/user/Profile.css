@@ -1,0 +1,409 @@
+section #profilePic {
+    height: 18rem;
+    width: 18rem;
+    margin: auto;
+    font-size: 16rem;
+}
+
+section div,
+p,
+h2,
+h4 {
+    color: white;
+}
+
+#header {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 22%;
+    margin-top: 0.6rem;
+}
+.header1{
+    width: 20% !important;
+}
+/* #header p:active{
+    text-decoration: underline;
+} */
+
+#header a {
+    position: relative;
+    text-decoration: none;
+
+    padding: 8px 0;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    /* justify-content: space-between; */
+    gap: 0.5rem;
+    margin-left: 1rem;
+
+}
+
+#header a b {
+    color: #e6eaf0;
+}
+
+#header a:hover {
+    color: #fff;
+}
+
+#header a.active {
+    color: white;
+}
+
+#header a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: #f78166;
+    border-radius: 2px;
+    width: 115%;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#section1 {
+    background: #0d1117;
+    width: 22rem;
+    text-align: center;
+}
+
+#logout {
+    background-color: #3a3b3c;
+    color: white;
+}
+
+#logout:hover {
+    background-color: #5e5f61;
+}
+
+#HeatMap {
+    width: 45rem;
+    height: 8rem;
+    border: 2px solid #393f47;
+    padding: 25px;
+    border-radius: 11px;
+}
+
+#userRepo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* justify-content: center; */
+    padding: 1rem 2rem 0 2rem;
+    padding-bottom: 3rem;
+}
+
+.repo {
+    border: 1px solid #42464a;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    width: 24rem;
+}
+
+#profileSection {
+    width: 62%;
+}
+
+#followBtn {
+    width: 18rem;
+}
+
+#repoPath {
+    color: #056ee6;
+    text-decoration: none;
+}
+
+#repoPath b {
+    color: #056ee6;
+}
+
+#repoPath:hover {
+    text-decoration: underline;
+}
+
+.repoDescription {
+    overflow-wrap: break-word;
+    /* word-break: break-all; */
+    width: 100%;
+    padding: 0.6rem 0;
+    /* width: 30rem; */
+        /* width: 48rem; */
+}
+
+.repoDescription p {
+    color: #a5a5a5;
+}
+
+#profileSection1Pic {
+    height: 4rem;
+    width: 4rem;
+}
+
+.repoOverview {
+    overflow-wrap: break-word;
+    width: 100%;
+    padding: 0.6rem 0;
+}
+
+.visibility {
+    height: 0.5rem;
+    border: 2px solid #45474a;
+    padding: 5px 0.6rem;
+    border-radius: 21px;
+    display: flex;
+    align-items: center;
+    color: #aba4a4;
+    font-size: 0.9rem;
+}
+
+.repoSpan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.followDetails{
+    display: flex
+;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+}
+.followSVG{
+    margin-right: 0.3rem;
+}
+.followDetails p span {
+    color: white;
+}
+.followDetails a{
+    text-decoration: none;
+}
+.followDetails a:hover span,
+.followDetails a:hover p {
+    text-decoration: underline;
+    color: #056ee6 !important;
+}
+#separate{
+    margin: 0 0.4rem;
+}
+.followBtn{
+    background: #30363d;
+}
+.noFollowers{
+        text-align: center;
+    margin-top: 4rem;
+}
+.editProfileSection{
+    text-align: left;
+}
+.editProfileInput{
+    padding: 0.5rem;
+    border: 2px solid #36404c;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 89% !important;
+}
+.saveProfileBtn{
+    width: 4rem !important;
+    background: #039103 !important;
+    color: white !important;
+    height: 1.9rem !important;
+    text-transform: capitalize !important;
+    font-size: 0.8rem !important;
+
+}
+.cancelProfileBtn{
+       width: 5rem !important;
+    border: 2px solid #4a5766 !important;
+    height: 1.9rem !important;
+    color: white !important;
+    font-size: 0.8rem !important;
+    text-transform: capitalize !important;
+    background: #253344 !important;
+}
+#followerAvatar{
+    height: 4rem;
+    width: 4rem;
+    font-size: 3rem;
+}
+.followersList ul li a{
+        display: flex
+;
+    gap: 2rem;
+   
+   height: 6.5rem;
+    text-decoration: none;
+}
+.followersList ul li{
+     list-style: none;
+     border-bottom: 2px solid #3e4a57;
+     margin-top: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.followersList ul li p{
+    color: white;
+    margin-top: 0.5rem;
+    word-break: break-word;
+}
+.ProfileBtn{
+    width: 95% !important;
+    text-transform: none !important;
+    font-size: 1rem !important;
+    color: white !important;
+    background: #29303a !important;
+    border: 1px solid #52565c !important;
+}
+.followUnfollwowBtn{
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 2px solid #525c69;
+    background: #39424c;
+    cursor: pointer;
+}
+.userNotExist{
+        width: 62%;
+    text-align: center;
+}
+.userNotExist div{
+    margin-top: 4rem;
+    text-align: center;
+}
+.followInfo{
+    width: 86%;
+}
+
+
+@media (max-width: 1300px) {
+    #profileSection {
+        width: 65%;
+    }
+    #HeatMap {
+        width: 38rem !important;
+    }
+    #userRepo {
+        column-gap: 1rem;
+    }
+    .repo{
+                width: 82% !important;
+    }
+}
+@media (max-width: 1100px) {
+    #section1 {
+    background: #0d1117;
+           width: 29%;
+    text-align: center;
+}
+#HeatMap {
+    width: 79% !important;
+}
+  .repo{
+                width: 82% !important;
+                margin-top: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #userRepo {
+        padding: 0 !important;
+    }
+  
+    section #profilePic {
+        height: 14rem;
+        width: 14rem;
+        font-size: 12rem;
+    }
+        #section1 {
+        background: #0d1117;
+        width: 31%;
+        }
+        .repo {
+        width: 86% !important;
+    }
+    section #profilePic {
+    height: 16rem;
+    width: 16rem;
+    }
+}
+@media (max-width: 890px) {
+    .mainProfileResponsive{
+        flex-direction: column;
+    }
+        section #profilePic {
+        height: 6rem;
+        width: 6rem;
+        font-size: 6rem;
+        margin: 0;
+        }
+        .profileSection1Header{
+                display: flex
+;
+    align-items: center;
+    gap: 1.5rem;
+    /* width: 100% !important; */
+    padding: 0 1rem 1rem;
+        }
+            #section1 {
+        width: 100%;
+    }
+    .userBioEdit{
+        padding: 0 1rem;
+                display: flex
+;
+        flex-direction: column;
+    }
+    .userCompanyResponsive, .profileEditBtnDiv{
+        padding-left: 1rem;
+    }
+        #profileSection {
+                width: 100%;
+        }
+            #userRepo {
+                    display: flex
+;
+    flex-direction: column;
+            }
+                .repo {
+                        margin: auto;
+                        margin-top: 1rem;
+                }
+                #repoHeading{
+                    margin-top: 1rem;
+                }
+                    #HeatMap {
+        width: 85% !important;
+        margin: auto;
+                    }
+                    #contributionHeading{
+                        margin-top: 2rem;
+                    }
+}
+@media (max-width: 400px) {
+        section #profilePic {
+                height: 5rem;
+    width: 5rem;
+    font-size: 4.5rem;
+        }
+}
+@media (max-width: 350px) {
+        .repo {
+        width: 77% !important;
+    }
+    #repoPath {
+    word-break: break-all;
+    }
+}

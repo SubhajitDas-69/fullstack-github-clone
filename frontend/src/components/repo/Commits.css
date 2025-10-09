@@ -1,0 +1,197 @@
+.commitContainer {
+  font-family: monospace;
+  font-size: 14px;
+  border: 1px solid #2d2d2d;
+  border-radius: 6px;
+  color: #dcdcdc;
+  overflow: auto !important;
+  width: 100%;
+  /* max-height: 30rem; */
+  margin-bottom: 2rem;
+}
+
+.commitsMain {
+  display: flex;
+  justify-content: left !important;
+}
+
+.diff-line {
+  display: flex;
+  /* align-items: flex-start; */
+  white-space: pre;
+}
+
+.diff-prefix {
+  width: 20px;
+  text-align: right;
+  padding-right: 5px;
+  user-select: none;
+  opacity: 0.8;
+}
+
+.line-added {
+  background-color: rgba(0, 128, 0, 0.25);
+}
+
+.line-removed {
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
+.line-normal {
+  background-color: transparent;
+}
+
+#userDiv {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+#commitHeader {
+  padding: 2rem 0 1rem 2rem;
+  border-bottom: 2px solid #262c33;
+}
+
+.commitList {
+  padding-right: 1rem;
+  border-right: 2px solid #303a47;
+  width: 18rem !important;
+  text-align: left !important;
+  padding-left: 1.9rem;
+  height: 100vh !important;
+  position: sticky;
+  top: 0;
+  margin-top: 0 !important;
+      border-right: 2px solid #282c32 !important;
+}
+
+.codeLanguage {
+  background: none !important;
+}
+
+.commitContents {
+  padding: 2rem;
+  width: 100%;
+}
+
+#commitMessage {
+    padding: 1rem 0.5rem;
+    /* background: blue; */
+    border: 2px solid #222d3a;
+    width: 94%;
+    border-radius: 10px;
+}
+#commitMessage p{
+      margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #fff
+}
+
+
+.commitFileName {
+  background-color: #1a1f25;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.fileList:hover{
+  cursor: pointer;
+}
+.fileList #commitFileLogo{
+  color: #17e217 !important;
+}
+.commitsSearch {
+       position: absolute;
+    width: 17rem;
+    margin-top: 1rem;
+    background: black;
+    padding: 1rem;
+    left: 2rem;
+}
+/* .commitContents h3{
+      margin-bottom: 1rem;
+} */
+.imageContainer{
+    width: 45%;
+    margin: auto;
+}
+.imageContainer img {
+  width: 100%;
+}
+.searchFileOnCommits{
+  margin-top: 2rem;
+}
+.commitContainer .fileContent{
+  position: sticky;
+  top: 0;
+}
+
+@media (max-width: 1010px) {
+  .commitList, .fileViewer{
+           height: 100vh !important;
+        top: 0 !important;
+        z-index: 1002 !important;
+        padding-top: 2rem;
+
+  }
+  .commitList input, .fileViewer input{
+            width: 89% !important;
+            margin-top: 1rem !important;
+  }
+}
+@media (max-width: 774px) {
+  .commitContents {
+            padding: 0 !important;
+        width: 95%;
+        margin: auto;
+  }
+  #commitHeader h2, span{
+    font-size: 1rem !important;
+  }
+  #commitHeader {
+    padding: 2rem 0 2rem;
+    width: 95%;
+    margin: auto;
+}
+.token.tag, .token.attr-name, .token.namespace, .token.deleted {
+    word-break: break-word !important;
+}
+}
+@media (max-width: 400px) {
+   .AllFile {
+      padding-left: 0 !important;
+     }
+ .commitList, .fileViewer {
+        width: 13rem !important;
+    }
+  .commitList input, .fileViewer input{
+            width: 89% !important;
+            margin-top: 1rem !important;
+  }
+}
+@media (max-width: 335px) {
+      #commitHeader {
+        margin-top: 5rem;
+      }
+}
+@media (max-width: 325px) {
+   .commitList, .fileViewer {
+        width: 10rem !important;
+    }
+    .AllFile {
+      padding-left: 0 !important;
+    }
+    .fileViewer {
+      padding-left: 1rem;
+    }
+     #commitHeader {
+      margin-top: 5rem;
+     }
+     .Content {
+             margin-top: 4.5rem;
+     }
+    
+}

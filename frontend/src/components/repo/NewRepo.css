@@ -1,0 +1,198 @@
+.container {
+    width: 800px;
+    margin: 30px auto;
+}
+
+h2 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.section {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #c9d1d9;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    background: #0d1117;
+    /* border: 2px solid #414b57; */
+    border-radius: 6px;
+    /* padding: 8px; */
+    color: #c9d1d9;
+    font-size: 14px;
+    /* margin-bottom: 15px; */
+}
+
+.RepoCreateInput {
+    padding: 0.5rem;
+    width: 97% !important;
+    border: 2px solid #444c56;
+}
+
+.repoCreateHeader {
+    margin-bottom: 1rem;
+}
+
+.setRepoDescription {
+    padding: 0.5rem;
+    border: 2px solid #444c56;
+}
+
+textarea {
+    resize: none;
+    height: 70px;
+}
+
+.chooseVisibility {
+    margin-bottom: 1.5rem;
+    color: white !important;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.dropdown {
+    background: #21262d;
+    border: 1px solid #454d56;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #c9d1d9;
+    display: flex;
+    justify-content: space-between;
+}
+
+#dropdownTxt {
+    line-height: 4px;
+}
+
+#dropdownTxt #dec {
+    font-size: 16px;
+    color: #86888b;
+        line-height: 1.4rem;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.button {
+    background: #238636;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button:hover {
+    background: #2ea043;
+}
+
+.small-text {
+    color: #8b949e;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+#dropdownTxt {
+    padding: 1rem 0;
+}
+
+.css-1tktgsa-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+    background: black !important;
+    border: 2px solid #626e7a !important;
+    border-radius: 12px !important;
+    margin-top: 0.5rem !important;
+}
+.visibilityIcon{
+    margin-right: 0.5rem;
+}
+.visibilitySelect{
+        display: flex
+;
+    width: 8rem !important;
+    height: 2.5rem !important;
+    margin-top: 0.5rem !important;
+    background: #202934 !important;
+    color: white !important;
+}
+.visibilityDropdown{
+    background-color: #0d1117;
+}
+
+.addReadmeBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+      background-color: #0c0e11;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 10px;
+}
+
+.readmeText h4 {
+  margin: 0;
+  font-weight: 600;
+  color: #c9d1d9;
+}
+
+.readmeDescription {
+  color: #8b949e;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.aboutLink {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.aboutLink:hover {
+  text-decoration: underline;
+}
+
+.readmeToggle {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 872px) {
+    .container{
+        width: 94%;
+    }
+}
+@media (max-width: 335px) {
+    .container{
+        margin-top: 7rem;
+    }
+}

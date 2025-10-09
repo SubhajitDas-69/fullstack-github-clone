@@ -1,0 +1,146 @@
+.commitListContainer {
+    max-width: 76%;
+    margin: 2rem auto;
+    padding: 1rem;
+    color: #e6edf3;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.commitTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #30363d;
+    margin-bottom: 1.5rem;
+}
+
+.commitGroup {
+    margin-bottom: 2rem;
+}
+
+.commitDate {
+    font-size: 0.9rem;
+    color: #7d8590;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.commits {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.commitItem {
+    padding: 1rem 1rem 0.8rem;
+    background-color: #0c1118;
+    border: 1px solid #505862;
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.commitMain {
+    display: flex;
+    justify-content: space-between !important;
+    width: 100%;
+}
+
+.commitInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.commitLink {
+    text-decoration: none;
+}
+
+.commitLink:hover {
+    text-decoration: underline;
+}
+
+.commitMessage {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: white;
+    word-break: break-word;
+}
+
+.commitAuthor {
+    font-size: 0.85rem;
+    color: #8b949e;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    word-break: break-word;
+}
+
+.authorName {
+    color: #c9d1d9;
+    font-weight: 500;
+}
+
+.commitMeta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.verifiedBadge {
+    background-color: #238636;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+}
+
+.commitHash {
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: #8b949e;
+}
+
+#CommitListProfile {
+    height: 1.2rem;
+    width: 1.2rem;
+    font-size: 1rem;
+}
+@media (max-width: 779px) {
+    .commitListContainer {
+        max-width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .commitMeta{
+        display: none;
+    }
+    .commitTitle {
+            font-size: 1.3rem;
+    color: #d6d7d8;
+    }
+}
+@media (max-width: 400px) {
+    .commitMessage{
+        font-size: 0.85rem;
+    }
+    .authorName{
+        font-size: 0.8rem !important;
+    }
+    #CommitListProfile {
+    height: 1rem;
+    width: 1rem;
+    font-size: 0.9rem;
+}
+}
+@media (max-width: 335px) {
+        .commitListContainer {
+            margin-top: 6rem;
+        }
+}
