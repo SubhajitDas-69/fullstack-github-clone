@@ -21,7 +21,7 @@ Users can simulate Git commands (`init`, `add`, `commit`, `push`, `pull`, `rever
 
 ## Tech Stack
 
-**Frontend:** React, React Router, Axios, Meterial ui  
+**Frontend:** React, React Router, Axios, Meterial ui, CSS  
 **Backend:** Node.js, Express.js
 **Database:** MongoDB, AWS
 **Hosting:** Vercel (Frontend) & Render (Backend)
